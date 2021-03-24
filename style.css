@@ -87,7 +87,7 @@ h3,
 #new-task {
   width: 318px;
 }
-p > button:hover {
+#add-item > button:hover {
   color: #0fc57c;
 }
 /* Task list */
