@@ -114,12 +114,12 @@ li > .main__task-input {
 li > .main__delete-btn:hover {
   color: #cf2323;
 }
-.delete-img {
+.main__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-img:hover {
+.main__delete-img:hover {
   transform: rotateZ(0);
 }
 /* Completed */
