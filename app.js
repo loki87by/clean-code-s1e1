@@ -7,15 +7,10 @@ var completedTasksHolder=document.getElementById("completed");
 //New task list item
 var createNewTaskElement=function(taskString){
   var listItem=document.createElement("li");
-  //input (checkbox)
   var checkBox=document.createElement("input");
-  //label
   var label=document.createElement("label");
-  //input (text)
   var editInput=document.createElement("input");
-  //button.edit
   var editButton=document.createElement("button");
-  //button.delete
   var deleteButton=document.createElement("button");
   var deleteButtonImg=document.createElement("img");
   label.innerText=taskString;
@@ -126,7 +121,6 @@ var ajaxRequest=function(){
 
 
 
-//Set the click handler to the addTask function.
 addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
@@ -155,7 +149,6 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
-  //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 
