@@ -29,12 +29,10 @@ var createNewTaskElement=function(taskString){
   deleteButtonImg.className="main__delete-img";
   deleteButton.appendChild(deleteButtonImg);
 
-  //and appending.
-  listItem.appendChild(checkBox);
-  listItem.appendChild(label);
-  listItem.appendChild(editInput);
-  listItem.appendChild(editButton);
-  listItem.appendChild(deleteButton);
+  const elements = [checkBox, label, editInput, editButton, deleteButton];
+  for(let i=0; i<elements.length; i++){
+    listItem.appendChild(elements[i])
+  }
   return listItem;
 }
 
