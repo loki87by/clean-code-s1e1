@@ -31,14 +31,14 @@ body {
   display: inline-block;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -128,12 +128,12 @@ li > .delete:hover {
 }
 /* Edit Task */
 .task-input {
-  display:none
+  display: none
 }
 .task-input-edit {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 .task-label-edit {
-  display:none;
+  display: none;
 }
