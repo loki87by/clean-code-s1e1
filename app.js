@@ -109,16 +109,14 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   checkBox.onchange=checkBoxEventHandler;
 }
 
-//cycle over incompleteTaskHolder ul list items
 for (var i=0; i<incompleteTaskHolder.children.length;i++){
   bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
 }
 
-//cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
   bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 
 // Issues with usability don't get seen until they are in front of a human tester.
-// prevent creation of empty tasks.
-// Change edit to save when you are in edit mode.
+// TODO: prevent creation of empty tasks.
+// TODO: Change edit to save when you are in edit mode.
