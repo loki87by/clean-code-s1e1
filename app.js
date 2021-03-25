@@ -22,10 +22,9 @@ var createNewTaskElement=function(taskString){
   editButton.innerText="Edit";
   editButton.className="main__edit-btn";
 
-  deleteButton.innerText="Delete";
   deleteButton.className="main__delete-btn";
   deleteButtonImg.src="./remove.svg";
-  deleteButtonImg.alt="remove";
+  deleteButtonImg.alt="Delete";
   deleteButtonImg.className="main__delete-img";
   deleteButton.appendChild(deleteButtonImg);
 
@@ -53,19 +52,21 @@ var editTask=function(){
   var editInput=listItem.querySelector(".main__task-input");
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".main__edit-btn");
+  listItem.classList.toggle("main__edit-mode");
   var containsClass=listItem.classList.contains("main__edit-mode");
+  editInput.value=label.innerText;
+  
   if(containsClass){
     label.classList.add("main__task-label-edit");
     label.innerText=editInput.value;
-    editBtn.innerText="Edit";
+    editBtn.innerText="Save";
     editInput.classList.add("main__task-input-edit");
   }else{
     label.classList.remove("main__task-label-edit");
     editInput.classList.remove("main__task-input-edit");
     editInput.value=label.innerText;
-    editBtn.innerText="Save";
+    editBtn.innerText="Edit";
   }
-  listItem.classList.toggle("main__edit-mode");
 };
 
 //Delete task.
