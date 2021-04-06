@@ -51,17 +51,17 @@ var editTask=function(){
   var editBtn=listItem.querySelector(".main__edit-btn");
   listItem.classList.toggle("main__edit-mode");
   var containsClass=listItem.classList.contains("main__edit-mode");
-  editInput.value=label.innerText;
   
   if(containsClass){
     label.classList.add("main__task-label-edit");
-    label.innerText=editInput.value;
+    console.log(label)
+    editInput.value=label.innerText;
     editBtn.innerText="Save";
     editInput.classList.add("main__task-input-edit");
   }else{
     label.classList.remove("main__task-label-edit");
     editInput.classList.remove("main__task-input-edit");
-    editInput.value=label.innerText;
+    label.innerText=editInput.value;
     editBtn.innerText="Edit";
   }
 };
