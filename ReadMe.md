@@ -11,3 +11,6 @@
   - Редактирование элемента из списка "COMPLETED"
   - Установка элемента в статус незавершенного и перенос в список "TODO" через checkbox
   - Анимация на кнопке удаления
+
+# *Проведена работа по чистке кода*
+Ссылка на оригинальный репозиторий: [https://github.com/ViktoryiaYatskova/clean-code-s1e1](https://github.com/ViktoryiaYatskova/clean-code-s1e1)
