@@ -1,3 +1,9 @@
+# clean code (работа по правке чужого кода) 
+### Произведены работы: 
+* Исправление HTML 
+* Исправление CSS 
+* Исправление JS 
+
 ![image](https://user-images.githubusercontent.com/8201843/111080709-d1289200-8510-11eb-861c-c39de6d99691.png)
 
 # Функционал приложения :
@@ -12,5 +18,4 @@
   - Установка элемента в статус незавершенного и перенос в список "TODO" через checkbox
   - Анимация на кнопке удаления
 
-# *Проведена работа по чистке кода*
-Ссылка на оригинальный репозиторий: [https://github.com/ViktoryiaYatskova/clean-code-s1e1](https://github.com/ViktoryiaYatskova/clean-code-s1e1)
+[Ссылка на оригинальный репозиторий без внесенных правок](https://github.com/ViktoryiaYatskova/clean-code-s1e1)
